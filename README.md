@@ -7,12 +7,15 @@ make a collage by canvas
 3. Calculate images' size (width and height)
    - horizontal images: limit the width, and use auto height
    - vertical images: limit the height, and use auto width
-4. Set the collage with 4 different pattern type
+4. Set the collage with 4 different pattern type (this code implement main pattern only)
 
 
 ## Result of main collage pattern
-![2022-04-14 00_48_27-Document](https://user-images.githubusercontent.com/45025236/163232744-e5fe1044-38f7-42c5-8ade-fc0d6c089452.png)
-![2022-04-14 00_48_38-Document](https://user-images.githubusercontent.com/45025236/163232755-da601a52-b73d-4bd4-a388-c045e0cf2641.png)
-![2022-04-14 00_47_22-Document](https://user-images.githubusercontent.com/45025236/163232766-d21a9113-21e6-4443-b8bc-58bdd9384a40.png)
-![2022-04-14 00_47_46-Document](https://user-images.githubusercontent.com/45025236/163232776-6ce97186-a9a6-4c25-86cf-0b7c045b0dc4.png)
-![2022-04-14 00_48_04-Document](https://user-images.githubusercontent.com/45025236/163232789-6ab4d171-9922-499a-b06f-765c97d2225b.png)
+![1](https://user-images.githubusercontent.com/45025236/163234943-11eaffba-abba-459b-b77f-c6b4cf71fe09.png)
+![2](https://user-images.githubusercontent.com/45025236/163234949-d80d3255-e031-4118-8bb8-350e18c9ef0e.png)
+![4](https://user-images.githubusercontent.com/45025236/163234953-d8462c9e-0e12-473f-8aa9-00ccb9a2422e.png)
+![6](https://user-images.githubusercontent.com/45025236/163234954-8498b0b6-c952-4417-a6aa-8690d8083d65.png)
+![8](https://user-images.githubusercontent.com/45025236/163234956-c9813c4c-7549-4ed1-8f66-1f168268911e.png)
+![10](https://user-images.githubusercontent.com/45025236/163234957-b4f2c451-05d4-4eb7-b13b-370fda517f54.png)
+![12](https://user-images.githubusercontent.com/45025236/163234959-ce3bfc42-d761-4607-93af-f8947d63f090.png)
+![16](https://user-images.githubusercontent.com/45025236/163234930-2c76c724-7743-4800-b211-bb2171b0f8be.png)
