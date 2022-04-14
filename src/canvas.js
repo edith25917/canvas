@@ -59,20 +59,20 @@ function getCollageSize(imgLen) {
 
 function getImgSize(imgArr, row, col) {
     const size = []
-    for (let i = 0; i < imgArr.length; i++) {
-        let h = imgArr[i].height
-        let w = imgArr[i].width
+    imgArr.forEach((img) => {
+        let h = img.height
+        let w = img.width
         let resizedH, resizedW = 0
 
         if (h > w) {
             resizedH = cHeight * 0.9 / row
-            resizedW = resizedH * imgArr[i].width / imgArr[i].height
+            resizedW = resizedH * img.width / img.height
         } else {
             resizedW = cWidth * 0.9 / col
-            resizedH = resizedW * imgArr[i].height / imgArr[i].width
+            resizedH = resizedW * img.height / img.width
         }
         size.push([resizedW, resizedH])
-    }
+    })
     return size
 }
 
@@ -94,6 +94,7 @@ function getRandomInt(max) {
 function setCollageByMainType(context, imgArr, imgSize, row, col) {
     const blockWidth = (cWidth - 20) / col
     const blockHeight = (cHeight - 20) / row
+    const radian = Math.PI / 180
     var imagePosition = []
     for (let i = 0; i < row; i++) {
         for (let k = 0; k < col; k++) {
@@ -109,9 +110,9 @@ function setCollageByMainType(context, imgArr, imgSize, row, col) {
         }
     }
 
-    for (let i = 0; i < imgArr.length; i++) {
-        drawImage(context, imgArr[i], imagePosition[i][0], imagePosition[i][1], imgSize[i][0], imgSize[i][1], getRandomInt(10) * Math.PI / 180)
-    }
+    imgArr.forEach((img, i) => {
+        drawImage(context, img, imagePosition[i][0], imagePosition[i][1], imgSize[i][0], imgSize[i][1], getRandomInt(10) * radian)
+    })
 }
 
 // below functions are not implemented yet
@@ -126,4 +127,3 @@ function setCollageByFreeType(context, imgArr, imgSize, row, col) {
 function setCollageByEmphasizeType(context, imgArr, imgSize, row, col) {
     // emphasize type logic
 }
-
